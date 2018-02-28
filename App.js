@@ -58,7 +58,6 @@ export default class App extends React.Component {
     });
   }
 
-
   async getWeather() {
     // Event handler for clicking of the "Get weather!" button
     // Calls the geocoding and weather API, get back a location and weather object

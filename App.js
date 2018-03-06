@@ -99,7 +99,7 @@ export default class App extends React.Component {
         </View>
         <View style={styles.currentWeather}>
           {/* Current weather conditions */}
-          <Text style={styles.currentIcon}><Icon size={85} name={icon(this.state.currentIcon)}></Icon></Text>
+          <Text>{this.state.currentIcon && (<Icon style={styles.currentIcon} size={85} name={icon(this.state.currentIcon)}/>)}</Text>
           <Text style={styles.locationText}>{this.state.locationName}</Text>
           <Text style={styles.currentTemperature}>{this.state.currentTemperature}</Text>
           <Text style={styles.currentSummary}>{this.state.currentSummary}</Text>
